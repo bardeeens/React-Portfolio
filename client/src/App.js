@@ -1,19 +1,29 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
-import './App.css';
-import Home from './components/pages/Home/index'
+import "./App.css";
+import Home from "./components/pages/Home/index";
+import Contact from "./components/pages/Contact/index";
+import Portfolio from "./components/pages/Portfolio/"
 
 function App() {
   return (
     <Router>
-<div>
-  <Header />
-  <Route exact path="/" component={Home} />
-        {/* <Route exact path="/about" component={About} />
-        <Route exact path="/blog" component={Blog} />
-        <Route path="/contact" component={Contact} /> */}
-  {/* <div className="background">
+      <div>
+        <Header />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/portfolio" component={Portfolio} />
+       
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+
+ {/* <div className="background">
 
   </div>
   <div className="container">
@@ -86,11 +96,3 @@ function App() {
   <script src="assets/js/script.js"></script>
    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
   <script src="assets/js/navscript.js"></script> */}
-
-  </div>
-    </Router>
-  
-  );
-}
-
-export default App;

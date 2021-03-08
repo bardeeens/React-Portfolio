@@ -11,8 +11,12 @@ const Header = () => {
       <li><Link to="/">
           Home
         </Link></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><Link to="/portfolio">
+          Portfolio
+        </Link></li>
+      <li><Link to="/contact">
+          Contact
+        </Link></li>
     </ul>
   </header> );
 }
