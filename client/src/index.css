@@ -3,12 +3,16 @@
 } */
 
 body {
-  background-color: rgb(2, 0, 128);
-  background-image: linear-gradient(to bottom right, #ffd89b, #19547b);
+  /* /* background-color: rgb(2, 0, 128); */
+  /* background-image: linear-gradient(to bottom right, #ffd89b, #19547b); */
+  /* background-repeat: repeat;
+  background: fixed; */
   /* overflow: hidden; */
   /* position: static; */
+  background-color: rgb(88, 88, 88);
   z-index: -2;
   text-align: center;
+  color: white;
 }
 
 .my-card {

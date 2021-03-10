@@ -4,7 +4,8 @@ body {
 
 body {
   /* background-color: purple; */
-  background-image: linear-gradient(to bottom right, #ffd89b, #19547b);
+  /* background-image: linear-gradient(to bottom right, #ffd89b, #19547b); */
+  /* background-color: #212121; */
 
   /* overflow: hidden; */
   /* position: static; */
@@ -163,13 +164,12 @@ body {
   transform: translateY(-1.875rem);
   margin-bottom: 0;
   color: #fefefe;
-  /* background-color: #212121; */
   border-radius: 15px;
 }
 
 .sticky-shrinknav-header {
   width: 100%;
-  height: 150px;
+  height: 200px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -179,20 +179,20 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url(./components/images/thaistatue.jpg);
+  background-image: url(./components/images/buslife.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-position: center; */
+  background-position: center;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   overflow: hidden;
   transition: all 0.5s ease;
-  /* z-index: 1; */
+  z-index: 1;
 }
-/* https://www.gettingsmart.com/wp-content/uploads/2017/06/Program-Code-Feature-Image.jpg */
+
 body.sticky-shrinknav-wrapper {
   padding-top: 130px;
 }

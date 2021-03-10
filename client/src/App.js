@@ -1,20 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./components/Header";
 import "./App.css";
-import Home from "./components/pages/Home/index";
+import Main from "./components/pages/Home/index";
 import Contact from "./components/pages/Contact/index";
-import Portfolio from "./components/pages/Portfolio/"
+import Portfolio from "./components/pages/Portfolio/";
+import Wrapper from "./components/Wrapper";
+import MainContext from "./utils/MainContext";
+import PortfolioContext from "./utils/PortfolioContext";
+import ContactContext from "./utils/ContactContext";
+import movieiq from "./components/images/movieiq.png";
+import stocks from "./components/images/stocksimpreview.png";
+import weather from "./components/images/yourweather.png";
+import profilePic from "./components/images/profilepic2.jpg";
 
 function App() {
+  const [mainState, setMainState] = useState({
+    title: "",
+    text: `My name is Derek Bardini. Full Stack Web Developer. Fluent in javaScript, node.js, express, SQL, Sequelize (& learning more everyday)
+    I am a recent graduate of the University of Minnesota Coding Boot Camp.
+    Portfolio full of responsive page designs. Excited for any new opportunities to learn!
+    Insanely competitive rates.`,
+    img: profilePic,
+  });
+
+  const [portfolioState, setPortState] = useState([
+    {
+      title: "Stock Simulator",
+      text:
+        "An educational program where users are given $1000 of fake money to invest in popular stocks. The simulation is connected to realtime stock prices. A fun, risk free way to play the market.",
+      img: stocks,
+    },
+    {
+      title: "MovieIQ",
+      text:
+        "A responsive, mobile first movie guessing game. Pure fun. Take your Netflix and chill game to the next level! I got to collaborate on this class project as part of a great team.",
+      img: movieiq,
+    },
+    {
+      title: "yourWeather⛅",
+      text:
+        "A no frills weather app. Check the realtime weather, plus the five day forecast of any city in the world!",
+      img: weather,
+    },
+    {
+      title: "2nd",
+      text: "asdf",
+      img: movieiq,
+    },
+  ]);
+
+  const [contactState, setContactState] = useState({
+    title: "",
+    text: "contact yo",
+  });
+  console.log(mainState.text);
   return (
     <Router>
       <div>
         <Header />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/portfolio" component={Portfolio} />
-       
+        <ContactContext.Provider value={contactState}>
+          <PortfolioContext.Provider value={portfolioState}>
+            <MainContext.Provider value={mainState}>
+              <Wrapper>
+                <Route exact path="/" component={Main} />
+                <Route exact path="/contact" component={Contact} />
+                <Route exact path="/portfolio" component={Portfolio} />
+              </Wrapper>
+            </MainContext.Provider>
+          </PortfolioContext.Provider>
+        </ContactContext.Provider>
       </div>
     </Router>
   );
@@ -22,8 +77,8 @@ function App() {
 
 export default App;
 
-
- {/* <div className="background">
+{
+  /* <div className="background">
 
   </div>
   <div className="container">
@@ -95,4 +150,5 @@ export default App;
     integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
-  <script src="assets/js/navscript.js"></script> */}
+  <script src="assets/js/navscript.js"></script> */
+}
