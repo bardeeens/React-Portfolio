@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.db7f73b6.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.6a49521f.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.6a49521f.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.1d799819.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.1d799819.js.map",
+    "static/js/2.999f7080.chunk.js": "/react-portfolio/static/js/2.999f7080.chunk.js",
+    "static/js/2.999f7080.chunk.js.map": "/react-portfolio/static/js/2.999f7080.chunk.js.map",
+    "static/js/3.2f93c32a.chunk.js": "/react-portfolio/static/js/3.2f93c32a.chunk.js",
+    "static/js/3.2f93c32a.chunk.js.map": "/react-portfolio/static/js/3.2f93c32a.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/main.db7f73b6.chunk.css.map": "/react-portfolio/static/css/main.db7f73b6.chunk.css.map",
+    "static/js/2.999f7080.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.999f7080.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/react-portfolio/static/media/buslife.293134a3.jpg",
+    "static/media/movieiq.dcae75a6.png": "/react-portfolio/static/media/movieiq.dcae75a6.png",
+    "static/media/profilepic.31e8bcbb.jpg": "/react-portfolio/static/media/profilepic.31e8bcbb.jpg",
+    "static/media/profilepic2.75b8c9b5.jpg": "/react-portfolio/static/media/profilepic2.75b8c9b5.jpg",
+    "static/media/stocksimpreview.d5a1af28.png": "/react-portfolio/static/media/stocksimpreview.d5a1af28.png",
+    "static/media/yourweather.b18a617a.png": "/react-portfolio/static/media/yourweather.b18a617a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d799819.js",
+    "static/js/2.999f7080.chunk.js",
+    "static/css/main.db7f73b6.chunk.css",
+    "static/js/main.6a49521f.chunk.js"
+  ]
+}
